@@ -1,14 +1,22 @@
 .counter {
     width: 100%;
     background: rgb(78, 78, 78);
-    padding: 2rem 10re;
+    padding: 2rem 10rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 25px;
     border: 1px solid whitesmoke;
-    button {
-        background: red;
-    }
+    // button {
+    //     background: red;
+    // }
+}
+
+.hello {
+    background: red;
+}
+
+.hello2 {
+    background: red;
 }
