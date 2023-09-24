@@ -6,6 +6,12 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "scripts": {
+    "watch": "webpack -- watch",
+    "dev": "webpack serve --env port=5000 mode=development",
+    "build:prod": "webpack --env mode=production",
+    "build:dev": "webpack --env mode=development"
+  },
   "devDependencies": {
     "@types/node": "^20.6.3",
     "@types/webpack": "^5.28.2",
