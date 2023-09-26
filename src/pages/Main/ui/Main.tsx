@@ -1,11 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { classNames } from '../../helpers/classNames'
+import { classNames } from 'helpers/classNames'
 
 const Main = () => {
-
-
-  
   return (
     <div>
         <h1>MAIN PAGE</h1>

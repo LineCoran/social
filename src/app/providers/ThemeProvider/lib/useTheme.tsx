@@ -1,6 +1,6 @@
-import { Theme } from "./ThemeContenxt"
+import { Theme } from "./ThemeContext"
 import { useContext } from "react"
-import { ThemeContext } from "./ThemeContenxt"
+import { ThemeContext } from "./ThemeContext"
 
 interface useThemeData {
     theme: Theme
