@@ -6,13 +6,14 @@ import { MainPageLazy } from './pages/main/Main.async';
 import { AboutPageAsync } from './pages/about/About.async';
 import { Suspense } from 'react';
 import { useTheme } from './theme/useTheme';
+import { classNames } from './helpers/classNames';
 
 export const App = () => {
 
   const {theme, toggleTheme} = useTheme()
 
   return (
-    <div className={`app ${theme}`}>
+    <div className={classNames('app', {}, [theme])}>
       <button onClick={toggleTheme}>TOGGLE</button>
       <BrowserRouter>
       <Suspense fallback={<div>Loading...</div>}>
