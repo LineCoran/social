@@ -17,15 +17,12 @@ export function buildWebpackConfig(options: BuildOptions ): webpack.Configuratio
         },
         devtool: isDev ? 'inline-source-map' : undefined,
         devServer: isDev ? buildDevServer(options) : undefined,
-        resolve: buildResolvers(),
+        resolve: buildResolvers(options),
         output: {
             filename: 'index[contenthash].js',
             path: paths.build,
             clean: true, 
         },
         plugins: buildPlugins(paths.html),
-        // optimization: {
-        //     runtimeChunk: 'single',
-        //   },
     }
 }
